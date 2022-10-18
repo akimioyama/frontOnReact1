@@ -1,59 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 #root {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.App{
-    width: 700px;
-    min-height: 100px;
+.App {
+  width: 700px;
+  min-height: 100px;
 }
 .form {
-    width: 100%;
-    margin: 70px;
-    margin-bottom: 0;
-    margin-top: 45px;
-    padding: 70px;
-    padding-top: 0;
-    padding-bottom: 0;
+  width: 100%;
+  margin: 70px;
+  margin-bottom: 0;
+  margin-top: 45px;
+  padding: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .form_input {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 .root_hr {
-    align-items: center;
-    justify-content: center;
-    margin: 0 15% 0 15%;
-    margin-top: 35px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15% 0 15%;
+  margin-top: 35px;
 }
 .item {
-    width: 700px;
-    min-height: 100px;
-    border: 1px solid teal;
-    
-    margin: 130px;
-    margin-bottom: 0;
-    margin-top: 45px;
+  width: 700px;
+  min-height: 100px;
+  border: 1px solid teal;
 
-    padding: 15px;
-    font-size: 16px;
+  margin: 130px;
+  margin-bottom: 0;
+  margin-top: 45px;
+
+  padding: 15px;
+  font-size: 16px;
 }
 .item_body {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .item_body_symma {
-    display: block;
+  display: block;
 }
 .symma {
-    color: red;
-    margin-left: 10px;
-    font-weight: bold;
+  color: red;
+  margin-left: 10px;
+  font-weight: bold;
 }
 .HeaderSpan {
-    margin-top: 15px;
-    margin-left: 140px;
+  margin-top: 15px;
+  margin-left: 140px;
+}
+.formwithoutid {
+}
+.formID_btn {
+  margin-top: 25px;
+}
+.DropList {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.citis {
+    
+}
+.citis select {
+    width: 100%;
+}
+.streetAndHouse {
+    display: flex;
+    width: 100%;
+}
+.left {
+    width: 70%;
+    margin-right: 10px;
+}
+.left select {
+    width: 100%;
+}
+.rigth {
+    width: 30%;
+}
+.rigth select {
+    width: 100%;
+}
+.apart {
+    width: 100%;
+}
+.apart select {
+    width: 15%;
 }

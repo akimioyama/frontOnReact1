@@ -1,0 +1,9 @@
+.DropList {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid teal;
+  height: 38px;
+  padding: 5px;
+  color: rgb(42, 65, 1);
+}
