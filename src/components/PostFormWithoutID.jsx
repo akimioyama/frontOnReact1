@@ -18,7 +18,7 @@ const PostFormWithoutID = ({ find }) => {
   const findPost = (e) => {
     e.preventDefault();
     const axios = require("axios").default;
-    axios.get("http://localhost:47127/api/users/" + person.city + "/" + person.street +"/"
+    axios.get("http://172.20.10.2:47127/api/users/" + person.city + "/" + person.street +"/"
     + person.house + "/" + person.apart)
     .then(function (response) {
       const newPost = {
@@ -27,6 +27,7 @@ const PostFormWithoutID = ({ find }) => {
         price: response.data[1],
         pd: response.data[3]
       };
+      console.log(newPost)
       find(newPost);
     }).catch(function (error) {
       console.log(error)
@@ -36,7 +37,7 @@ const PostFormWithoutID = ({ find }) => {
 
   useEffect(() => {
     const axios = require("axios").default;
-    axios.get("http://localhost:47127/api/users/c").then(function (response) {
+    axios.get("http://172.20.10.2:47127/api/users/c").then(function (response) {
       setCitisAll(response.data);
     }).catch(function (error) {
       console.log(error)
@@ -52,7 +53,7 @@ const PostFormWithoutID = ({ find }) => {
       apart: ""
     });
     const axios = require("axios").default;
-    axios.get("http://localhost:47127/api/users/c/" + temp)
+    axios.get("http://172.20.10.2:47127/api/users/c/" + temp)
     .then(function (response) {
       setStreetAll(response.data);
     }).catch(function (error) {
@@ -70,7 +71,7 @@ const PostFormWithoutID = ({ find }) => {
       apart: ""
     })
     const axios = require("axios").default;
-    axios.get("http://localhost:47127/api/users/cs/" + person.city + "/" + temp)
+    axios.get("http://172.20.10.2:47127/api/users/cs/" + person.city + "/" + temp)
     .then(function (response) {
       setHouseAll(response.data);
     }).catch(function (error) {
@@ -87,7 +88,7 @@ const PostFormWithoutID = ({ find }) => {
       apart: ""
     })
     const axios = require("axios").default;
-    axios.get("http://localhost:47127/api/users/csh/" + person.city + "/" + person.street + "/" + temp)
+    axios.get("http://172.20.10.2:47127/api/users/csh/" + person.city + "/" + person.street + "/" + temp)
     .then(function (response) {
       setApartAll(response.data);
     }).catch(function (error) {

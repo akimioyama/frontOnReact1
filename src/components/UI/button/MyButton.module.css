@@ -9,6 +9,7 @@
     height: 35px;
     border-radius: 2px;
     transition: 0.25s linear;
+    margin: 2px;
 }
 .myBtn:hover {
     background: rgb(0, 153, 153);

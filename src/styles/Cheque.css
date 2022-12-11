@@ -1,0 +1,30 @@
+.myModalContent {
+    margin-top: 15px;
+
+    padding: 25px;
+    background-color: white;
+    border: 1px solid teal;
+    border-radius: 2px;
+    min-width: 450px;
+    min-height: 300px;
+}
+.myModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header, .name{
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+}
+.fn {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.qr {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
